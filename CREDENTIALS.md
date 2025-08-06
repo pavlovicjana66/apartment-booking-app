@@ -16,7 +16,7 @@
 
 ## 🚀 How to Login:
 
-1. **Open the application** in your browser: `http://localhost:3000`
+1. **Open the application** in your browser: `http://localhost:3012`
 2. **Click "Login"** in the navigation
 3. **Enter credentials** from the table above
 4. **Click "Login"** button
