@@ -6,7 +6,12 @@ const connection = mysql.createConnection({
   port: process.env.DB_PORT || 3306,
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'apartment_booking'
+  database: process.env.DB_NAME || 'apartment_booking',
+  charset: 'utf8mb4',
+  timezone: 'UTC',
+  acquireTimeout: 60000,
+  timeout: 60000,
+  reconnect: true
 });
 
 const initializeDatabase = () => {

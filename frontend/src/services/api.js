@@ -4,7 +4,9 @@ const api = axios.create({
   baseURL: process.env.REACT_APP_API_URL || 'http://localhost:6012',
   headers: {
     'Content-Type': 'application/json',
+    'X-API-Version': process.env.REACT_APP_API_VERSION || 'v1',
   },
+  timeout: 10000, // 10 seconds timeout
 });
 
 // Request interceptor to add auth token
